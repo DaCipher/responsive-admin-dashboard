@@ -241,7 +241,7 @@ main .date {
   background: var(--color-light);
   border-radius: var(--border-radius-1);
   margin-top: 1rem;
-  padding: 0.5rem 1.6rem;
+  padding: 0.5rem;
 }
 
 main .date input[type="date"] {
@@ -256,6 +256,9 @@ main .insights {
 }
 
 main .insights > div {
+  display: grid;
+  grid-template-columns: 4rem auto;
+  gap: 1.6rem;
   background: var(--color-white);
   padding: var(--card-padding);
   border-radius: var(--card-border-radius);
@@ -267,6 +270,9 @@ main .insights > div:hover {
   box-shadow: none;
 }
 main .insights > div span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: var(--color-primary);
   padding: 0.5rem;
   border-radius: 50%;
@@ -573,7 +579,7 @@ main .recent-orders a {
   }
 
   main .recent-orders table {
-    width: 83vw;
+    width: 48vw;
   }
 
   main table thead tr th:last-child,
